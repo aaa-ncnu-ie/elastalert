@@ -48,7 +48,7 @@ timeframe:
 # For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
 filter:
 - query_string:
-    query: "Process has crashed with type"
+    query: "crashed"
 
 # (Required)
 # The alert is use when a match is found
