@@ -280,6 +280,11 @@ ElastAlert does not currently support stateful alerts or resolve events.
 
 Currently, the only way to set a warning threshold is by creating a second rule with a lower threshold.
 
+## Deploy
+
+Example:
+cf push elastalert-app -c "python -m elastalert.elastalert --verbose --config config.yaml" --no-route -b python_buildpack
+
 ## License
 
 ElastAlert is licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
