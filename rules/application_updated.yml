@@ -22,7 +22,7 @@ es_host: 10.91.36.101
 
 # The elasticsearch port
 es_port: 9200
-name: Status App Updaed
+name: Status App Updated
 
 # (Required)
 # Type of alert.
