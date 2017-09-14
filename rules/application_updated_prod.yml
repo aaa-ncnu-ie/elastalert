@@ -48,13 +48,13 @@ timeframe:
 # For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
 filter:
 - query_string:
-    query: "updated AND prod"
+    query: "updated AND prod NOT instances"
 
 # (Required)
 # The alert is use when a match is found
 alert:
 - "slack"
-
+#PCF Alerts Webhook
 slack_webhook_url: "https://hooks.slack.com/services/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"
 
 

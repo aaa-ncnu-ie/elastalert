@@ -22,7 +22,7 @@ es_host: 10.91.36.101
 
 # The elasticsearch port
 es_port: 9200
-name: PROD CRASHING!
+name: Status App Updated
 
 # (Required)
 # Type of alert.
@@ -48,14 +48,14 @@ timeframe:
 # For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
 filter:
 - query_string:
-    query: "crashed AND prod"
+    query: "updated AND app AND instances NOT prod"
 
 # (Required)
 # The alert is use when a match is found
 alert:
 - "slack"
-#PCF Alerts Webhook
-slack_webhook_url: "https://hooks.slack.com/services/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"
+#Elastalert Slack Webhook
+slack_webhook_url: "https://hooks.slack.com/services/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"
 
 
 # slack_webhook_url: "https://hooks.slack.com/services/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"

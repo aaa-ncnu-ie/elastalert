@@ -48,13 +48,13 @@ timeframe:
 # For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
 filter:
 - query_string:
-    query: "updated AND app"
+    query: "updated AND app NOT instances"
 
 # (Required)
 # The alert is use when a match is found
 alert:
 - "slack"
-
+#Alastalert Webhook
 slack_webhook_url: "https://hooks.slack.com/services/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"
 
 

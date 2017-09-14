@@ -54,7 +54,7 @@ filter:
 # The alert is use when a match is found
 alert:
 - "slack"
-
+#Elastalert Slack Webhook
 slack_webhook_url: "https://hooks.slack.com/services/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"
 
 
