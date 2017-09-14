@@ -22,7 +22,7 @@ es_host: 10.91.36.101
 
 # The elasticsearch port
 es_port: 9200
-name: Status CRASHING
+name: Non-Prod App Crashing
 
 # (Required)
 # Type of alert.
@@ -48,7 +48,7 @@ timeframe:
 # For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
 filter:
 - query_string:
-    query: "crashed"
+    query: "crashed NOT prod"
 
 # (Required)
 # The alert is use when a match is found
