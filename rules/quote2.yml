@@ -48,7 +48,7 @@ timeframe:
 # For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
 filter:
 - query_string:
-    query: "response_code:[500 TO 511] AND source_host:ds.quote"
+    query: response_code:[500 TO 511] AND source_host:"ds.quote-prod.quote2main"
 
 # (Required)
 # The alert is use when a match is found
